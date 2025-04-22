@@ -1,0 +1,101 @@
+/* Home Page Background */
+.home {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Matching login page */
+    min-height: 100vh;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Navbar */
+  .home-navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Employee Management System Image with Dark Overlay */
+  .home-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .home-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(40%);
+    transition: filter 0.3s ease, transform 0.3s ease-in-out;
+  }
+  
+  .home-image:hover {
+    filter: brightness(60%);
+    transform: scale(1.05);
+  }
+  
+  /* Welcome Text */
+  .home-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  /* Employee Section */
+  .employee-section {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Login Message */
+  .text-center h3 {
+    font-size: 1.3rem;
+    margin: 20px 0;
+  }
+  
+  /* Login Button */
+  .login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #0056b3, #0093d3);
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+    }
+  }
+  

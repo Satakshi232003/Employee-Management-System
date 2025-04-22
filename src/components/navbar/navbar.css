@@ -1,0 +1,84 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-cont {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navigation Links */
+.links-cont {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.link-list-cont {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+/* Navigation Buttons */
+.navabarBtn {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navabarBtn:hover {
+  background: linear-gradient(to right, #0056b3, #0093d3);
+  transform: scale(1.05);
+}
+
+/* User Avatar */
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Remove Default Dropdown Arrow */
+.dropdown-toggle::after {
+  display: none;
+}
